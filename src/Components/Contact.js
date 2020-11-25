@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col, Form, Button } from 'react-bootstrap'
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai'
 import '../App.css';
 const Contact = () => {
@@ -7,9 +7,33 @@ const Contact = () => {
         <section>
             <Row>
                 <Col>
-                    <Row className="text-center title">
+                    <Row>
                         <Col>
-                            <h2>Contact</h2>
+                            <h2>Let's Collaborate</h2>
+                        </Col>
+                        <Col>
+                            <h3>Say Hi</h3>
+                            <Form>
+                                <Form.Group>
+
+                                    <Form.Control type="name" placeholder="name" />
+                                </Form.Group>
+                                <Form.Group >
+
+                                    <Form.Control type="subject" placeholder="subject" />
+                                </Form.Group>
+
+                                <Form.Group >
+
+                                    <Form.Control type="subject" placeholder="subject" />
+                                </Form.Group>
+
+                                <Form.Group >
+
+                                    <Form.Control as="textarea" placeholder="Message" rows={3} />
+                                </Form.Group>
+                            </Form>
+                            <Button primary={"variant"}>Send </Button>
                         </Col>
                     </Row>
                     <Row className="justify-content-md-center">
