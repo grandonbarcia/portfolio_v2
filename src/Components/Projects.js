@@ -6,7 +6,7 @@ import { AiOutlineGithub } from 'react-icons/ai'
 import '../App.css';
 const Projects = () => {
     return (
-        <section>
+        <section id='projects'>
             <Row>
                 <Col>
                     <Row className='title'>

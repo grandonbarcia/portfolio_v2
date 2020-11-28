@@ -4,7 +4,7 @@ import { Browser } from 'react-kawaii'
 import '../App.css';
 const AboutMe = () => {
     return (
-        <section>
+        <section id='about'>
             <Row className='title'>
                 <Col className='text-center' xl={{ span: 2, offset: 2 }} >
                     <h3>About Me</h3>

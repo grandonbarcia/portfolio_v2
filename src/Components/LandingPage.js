@@ -2,9 +2,10 @@ import React from 'react'
 import { Row, Col } from 'react-bootstrap/'
 import { Browser } from 'react-kawaii'
 import '../App.css';
+
 const LandingPage = () => {
     return (
-        <section>
+        <section id="home" >
             <Row>
                 <Col className='text-center'>
                     <h1>Hi, I'm Brandon</h1>
