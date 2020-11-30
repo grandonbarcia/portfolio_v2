@@ -2,6 +2,7 @@ html, body, #root, .App {
   height: 100vh;
 }
 
+
 section { 
   margin: 50px 0px 50px 0px;
 }
@@ -15,4 +16,13 @@ section .title {
 section .sub--text{
   margin-bottom: 25px;
   font-size: 18px;
+}
+
+
+.github__link{
+  color: green;
+}
+
+.app__link {
+  color: none;
 }
