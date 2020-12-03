@@ -1,6 +1,5 @@
 import React from 'react'
-import { Row, Col, Card, Button } from 'react-bootstrap/'
-import blank_pic from '../img/blank_profile.png'
+import { Row, Col, Card } from 'react-bootstrap/'
 import CovidTracker from '../img/covid19.JPG'
 import InstagramClone from '../img/instagram-clone.JPG'
 import TypingTest from '../img/typing-test.JPG'
@@ -29,10 +28,10 @@ const Projects = () => {
                                     </Card.Text>
                                     <Row className="justify-content-end text-center" noGutters={true}>
                                         <Col xl={2}>
-                                            <a href="https://github.com/grandonbarcia/covid-tracker" target='_blank'><AiOutlineGithub size={24} /></a>
+                                            <a href="https://github.com/grandonbarcia/covid-tracker" target='_blank' rel="noreferrer"><AiOutlineGithub size={24} /></a>
                                         </Col>
                                         <Col xl={2} >
-                                            <HiOutlineDesktopComputer size={24} />
+                                            <a href="https://grandonbarcia.github.io/covid-tracker/" target='_blank' rel='norefferrer'><HiOutlineDesktopComputer size={24} /> </a>
                                         </Col>
                                     </Row>
                                 </Card.Body>
@@ -49,10 +48,10 @@ const Projects = () => {
 
                                     <Row className="justify-content-end text-center" noGutters={true}>
                                         <Col xl={2}>
-                                            <a href='https://github.com/grandonbarcia/instagram-clone' target='_blank'><AiOutlineGithub size={24} /></a>
+                                            <a href='https://github.com/grandonbarcia/instagram-clone' target='_blank' rel="noreferrer"><AiOutlineGithub size={24} /></a>
                                         </Col>
                                         <Col xl={2} >
-                                            <HiOutlineDesktopComputer size={24} />
+                                            <a href='https://pedantic-cray-446016.netlify.app/login' target='_blank' rel='noreferrer'><HiOutlineDesktopComputer size={24} /></a>
                                         </Col>
                                     </Row>
                                 </Card.Body>
@@ -68,10 +67,10 @@ const Projects = () => {
                                 </Card.Text>
                                     <Row className="justify-content-end text-center" noGutters={true}>
                                         <Col xl={2}>
-                                            <a href='https://github.com/grandonbarcia/typing-test' target='_blank'><AiOutlineGithub size={24} /></a>
+                                            <a href='https://github.com/grandonbarcia/typing-test' target='_blank' rel="noreferrer"><AiOutlineGithub size={24} /></a>
                                         </Col>
                                         <Col xl={2} >
-                                            <HiOutlineDesktopComputer size={24} />
+                                            <a href='https://vigilant-spence-6f0b27.netlify.app/' target='_blank' rel='noreferrer'><HiOutlineDesktopComputer size={24} /></a>
                                         </Col>
                                     </Row>
                                 </Card.Body>
