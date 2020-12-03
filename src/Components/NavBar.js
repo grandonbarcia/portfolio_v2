@@ -10,9 +10,8 @@ const Navi = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse>
                     <Nav className="ml-auto">
-                        <Nav.Link as={AnchorLink} offset='100' href="#home" ><AnchorLink>Home</AnchorLink></Nav.Link>
                         <Nav.Link as={AnchorLink} offset='100' href="#about" >About Me</Nav.Link>
-                        <Nav.Link as={AnchorLink} offset='100' href="#projects" >Projects</Nav.Link>
+                        <Nav.Link as={AnchorLink} offset='150' href="#projects" >Projects</Nav.Link>
                         <Nav.Link as={AnchorLink} offset='100' href="#contact" >Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
