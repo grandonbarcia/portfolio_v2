@@ -4,7 +4,7 @@ html, body, #root, .App {
 
 
 section { 
-  margin: 50px 0px 50px 0px;
+  margin: 150px 0px 250px 0px;
 }
 
 
@@ -25,4 +25,8 @@ section .sub--text{
 
 .app__link {
   color: none;
+}
+
+.about__title__row {
+  margin-top: 100px;
 }
