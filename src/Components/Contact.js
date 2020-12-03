@@ -6,8 +6,8 @@ import '../App.css';
 const Contact = () => {
     return (
         <section id='contact'>
-            <Row className="justify-content-md-center" >
-                <Col xl={10}>
+            <Row className="justify-content-md-center " >
+                <Col xl={10} >
                     <Row>
                         <Col xl={12}>
                             <h2>Let's Collaborate</h2>
@@ -15,7 +15,7 @@ const Contact = () => {
                     </Row>
                     <Row>
                         <Col xl={7}>
-                            <Row className="h-100">
+                            <Row>
                                 <Col>
                                     grandonleebarcia@gmail.com
                                 </Col>
@@ -24,7 +24,7 @@ const Contact = () => {
                                 </Col>
                             </Row>
 
-                            <Row className="align-items-end">
+                            <Row className="align-items-end h-100">
                                 <Col>
                                     <Row>
                                         <Col>
@@ -58,10 +58,10 @@ const Contact = () => {
                             </Row>
                         </Col>
                         <Col xl={5}>
-                            <Row className="h-100">
+                            <Row>
                                 <Col>
                                     <h4>Say Hi</h4>
-                                    <Form className="h-75">
+                                    <Form>
                                         <Row>
                                             <Col>
                                                 <Form.Group>
