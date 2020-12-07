@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div className='App'>
       <NavBar />
-      <Container fluid={'xl'}>
+      <Container fluid={'lg'}>
         <LandingPage />
         <Projects />
         <Contact />

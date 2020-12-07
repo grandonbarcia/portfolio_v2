@@ -13,20 +13,20 @@ const LandingPage = () => {
                     <h3 style={{ color: 'gray' }}>I like solving problems one app at a time. </h3>
                 </Col>
             </Row>
-            <Row className='about__title__row'>
-                <Col className='text-center' xl={{ span: 2, offset: 2 }} >
+            <Row className='title'>
+                <Col className='text-center' sm={{ span: 4, offset: 4 }} md={{ span: 3, offset: 2 }} lg={{ span: 2, offset: 2 }} xl={{ span: 2, offset: 2 }} >
                     <h3>About Me</h3>
                 </Col>
             </Row>
             <Row className='justify-content-md-center'>
-                <Col className='text-center' xl={3}>
+                <Col className='text-center' md={4} lg={3} xl={3}>
                     <Row>
                         <Col>
                             <Browser size={150} mood="happy" color="#61DDBC" />
                         </Col>
                     </Row>
                 </Col>
-                <Col xl={6}>
+                <Col xs={{ span: 10, offset: 1 }} sm={{ span: 9, offset: 2 }} md={{ span: 5, offset: 0 }} lg={{ span: 6, offset: 0 }} xl={{ span: 6, offset: 0 }}>
                     <Row className="sub--text">
                         <Col>
                             Creating web apps has always fascinated me, that's why I decided to turn this interest into a career. Despite acquiring considerable knowledge, I do not take it for granted. I constantly try to develop, which allows me to level up my code and create more dynamic projects.
@@ -66,7 +66,7 @@ const LandingPage = () => {
                     </Row>
                 </Col>
             </Row>
-        </section>
+        </section >
     )
 }
 

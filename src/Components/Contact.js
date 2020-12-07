@@ -1,22 +1,64 @@
-import React from 'react'
-import { Row, Col, Form, Button } from 'react-bootstrap'
+import React, { useState } from 'react'
+import { Row, Col, Button } from 'react-bootstrap'
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai'
 import { SpeechBubble } from 'react-kawaii'
+import SayHi from './SayHi'
+import ThankYou from './ThankYou'
+import useForm from '../Hooks/useForm'
 import '../App.css';
+
+const URL = 'http://localhost:5000/portfolio'
+
+
+
 const Contact = () => {
+
+    const { handleChange, messageInput, isFilled } = useForm();
+    const [isFormSending, setIsFormSending] = useState(false);
+    const [formSentSuccess, setFormSentSuccess] = useState(false);
+
+    const [errorMessage, setErrorMessage] = useState('');
+    const [isError, showError] = useState(false)
+    const handleMessage = async () => {
+        setIsFormSending(true);
+        console.log(messageInput);
+        try {
+            const requestOptions = {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(messageInput),
+            }
+            let response = await fetch(URL, requestOptions);
+            let data = await response.json();
+            if (data.isValidated) {
+                setFormSentSuccess(true);
+
+            } else {
+                showError(true);
+                setErrorMessage(data.message)
+                setIsFormSending(false);
+            }
+
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+
+
     return (
         <section id='contact'>
             <Row className="justify-content-md-center " >
-                <Col xl={10} >
+                <Col sm={{ span: 10, offset: 1 }} lg={{ span: 10, offset: 0 }} xl={{ span: 10, offset: 0 }} >
                     <Row>
-                        <Col xl={12}>
+                        <Col xs={{ span: 10, offset: 2 }} sm={{ span: 10, offset: 3 }} md={{ span: 10, offset: 2 }} lg={{ span: 12, offset: 0 }} xl={{ span: 12, offset: 0 }}>
                             <h2>Let's Collaborate</h2>
                         </Col>
                     </Row>
                     <Row>
-                        <Col xl={7}>
+                        <Col md={6} lg={7} xl={7}>
                             <Row>
-                                <Col>
+                                <Col className="sub__title" sm={{ span: 7, offset: 3 }} md={{ span: 12, offset: 0 }} lg={{ span: 12, offset: 0 }} xl={{ span: 12, offset: 0 }}>
                                     grandonleebarcia@gmail.com
                                 </Col>
                                 <Col className="my-auto" xl={12}>
@@ -25,79 +67,40 @@ const Contact = () => {
                             </Row>
 
                             <Row className="align-items-end h-100">
-                                <Col>
+                                <Col xs={{ span: 6, offset: 0 }} sm={{ span: 5, offset: 1 }} md={{ span: 5, offset: 0 }} lg={{ span: 6, offset: 0 }} xl={{ span: 6, offset: 0 }} >
                                     <Row>
-                                        <Col>
+                                        <Col className="sub__title">
                                             <h5>Find Me</h5>
                                         </Col>
                                     </Row>
-                                    <Row>
-                                        <Col xl={2} className="text-center">
-                                            <AiFillGithub size={32} />
+                                    <Row className="contact__links">
+                                        <Col xs={3} sm={3} md={3} lg={2} xl={2} className="text-center">
+                                            <a href="https://github.com/grandonbarcia" target="_blank" rel="noreferrer"><AiFillGithub size={32} /></a>
                                         </Col >
-                                        <Col xl={2} className="text-center">
-                                            <AiFillLinkedin size={32} />
+                                        <Col xs={3} sm={3} md={3} lg={2} xl={2} className="text-center">
+                                            <a href="https://www.linkedin.com/in/brandon-garcia-54708516b/" target="_blank" rel="noreferrer"><AiFillLinkedin size={32} /></a>
                                         </Col>
-                                        <Col xl={2} className="text-center">
-                                            <AiOutlineMail size={32} />
+                                        <Col xs={3} sm={3} md={3} lg={2} xl={2} className="text-center">
+                                            <a href="mailto:grandonleebarcia@gmail.com"><AiOutlineMail size={32} /></a>
                                         </Col>
                                     </Row>
                                 </Col>
-                                <Col>
+                                <Col xs={6} sm={6} md={7} lg={6} xl={6}>
                                     <Row>
                                         <Col>
                                             <h5>San Jose, California</h5>
                                         </Col>
                                     </Row>
                                     <Row>
-                                        <Col>
+                                        <Col className="contact__number">
                                             (352) 262-7435
                                         </Col>
                                     </Row>
                                 </Col>
                             </Row>
                         </Col>
-                        <Col xl={5}>
-                            <Row>
-                                <Col>
-                                    <h4>Say Hi</h4>
-                                    <Form>
-                                        <Row>
-                                            <Col>
-                                                <Form.Group>
-                                                    <Form.Control type="name" placeholder="Name" />
-                                                </Form.Group>
-                                            </Col>
-                                            <Col>
-                                                <Form.Group >
-                                                    <Form.Control type="subject" placeholder="Subject" />
-                                                </Form.Group>
-                                            </Col>
-                                        </Row>
-                                        <Row>
-                                            <Col>
-                                                <Form.Group >
-                                                    <Form.Control type="company" placeholder="Company" />
-                                                </Form.Group>
-                                            </Col>
-                                            <Col>
-                                                <Form.Group >
-                                                    <Form.Control type="email" placeholder="Email" />
-                                                </Form.Group>
-                                            </Col>
-                                        </Row>
-                                        <Form.Group >
-                                            <Form.Control as="textarea" placeholder="Message" rows={3} />
-                                        </Form.Group>
-                                    </Form>
-                                </Col>
-                            </Row>
-                            <Row>
-                                <Col>
-                                    <Button primary={"variant"}>Send </Button>
-                                </Col>
-                            </Row>
-                        </Col>
+                        {formSentSuccess ? <ThankYou /> : <SayHi handleChange={handleChange} isFormSending={isFormSending} handleMessage={handleMessage} isError={isError} errorMessage={errorMessage} />}
+
                     </Row>
                 </Col>
             </Row>

@@ -1,5 +1,14 @@
 html, body, #root, .App {
   height: 100vh;
+  
+}
+
+#projects .title {
+  margin-bottom: 100px;
+}
+
+#about .title {
+  margin-top: 50px
 }
 
 
@@ -15,7 +24,8 @@ section .title {
 
 section .sub--text{
   margin-bottom: 25px;
-  font-size: 18px;
+  font-size: 20px;
+  
 }
 
 
@@ -27,6 +37,42 @@ section .sub--text{
   color: none;
 }
 
-.about__title__row {
-  margin-top: 100px;
+@media (max-width: 992px) {
+  
+section .sub--text{
+  font-size: 15px;
+  
 }
+
+.card__col {
+  margin-bottom: 50px;
+}
+
+
+}
+
+@media (max-width: 768px) { 
+  section .sub--text{
+    margin-top: 10px
+    
+  }
+  .SayHi {
+    margin-top: 100px;
+  }
+  .sub__title{
+    text-align: center;
+  }
+  .contact__links{
+    padding-left: 25px;
+    text-align: center;
+  }
+  .contact__number{
+    min-height: 30px;
+    text-align: center;
+    margin: auto;
+  }
+ }
+
+
+
+

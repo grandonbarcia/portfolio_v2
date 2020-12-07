@@ -4,8 +4,8 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Navi = () => {
     return (
-        <Navbar bg="light" expand="lg" fixed='top'>
-            <Container fluid={'xl'} >
+        <Navbar bg="light" expand="sm" fixed='top'>
+            <Container fluid={'md'}>
                 <Navbar.Brand>Brandon Garcia</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse>
