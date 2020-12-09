@@ -11,13 +11,23 @@ html, body, #root, .App {
   margin-top: 50px
 }
 
+#contact {
+  padding-bottom: 300px;
+
+}
+
 
 section { 
-  margin: 150px 0px 250px 0px;
+  margin: 150px 0px 170px 0px;
+}
+
+.main___title {
+  font-family: 'Concert One', cursive;
 }
 
 
 section .title {
+  font-family: 'Concert One', cursive;
   margin-bottom: 30px;
 }
 
@@ -25,7 +35,22 @@ section .title {
 section .sub--text{
   margin-bottom: 25px;
   font-size: 20px;
+  font-family: 'Lato', sans-serif;
   
+}
+
+.navBar {
+  font-family: 'Concert One', cursive;
+  color: white;
+}
+
+.name {
+  color: white;
+  font-size: 25px;
+}
+
+.card__col {
+  font-family: 'Lato', sans-serif;
 }
 
 
@@ -46,6 +71,7 @@ section .sub--text{
 
 .card__col {
   margin-bottom: 50px;
+  font-family: 'Lato', sans-serif;
 }
 
 
