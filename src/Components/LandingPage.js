@@ -7,7 +7,7 @@ const LandingPage = () => {
     return (
         <section id="about" >
             <Row>
-                <Col className='text-center'>
+                <Col className='text-center main___title'>
                     <h1>Hi, I'm Brandon</h1>
                     <h1>Software Developer </h1>
                     <h3 style={{ color: 'gray' }}>I like solving problems one app at a time. </h3>
