@@ -4,15 +4,15 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Navi = () => {
     return (
-        <Navbar bg="light" expand="sm" fixed='top'>
+        <Navbar className="navBar" variant="dark" bg="dark" expand="sm" fixed='top'>
             <Container fluid={'md'}>
-                <Navbar.Brand>Brandon Garcia</Navbar.Brand>
+                <Navbar.Brand className="name">Brandon Garcia</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse>
                     <Nav className="ml-auto">
-                        <Nav.Link as={AnchorLink} offset='100' href="#about" >About Me</Nav.Link>
-                        <Nav.Link as={AnchorLink} offset='150' href="#projects" >Projects</Nav.Link>
-                        <Nav.Link as={AnchorLink} offset='100' href="#contact" >Contact</Nav.Link>
+                        <Nav.Link as={AnchorLink} offset='100' className="link" href="#about" >About Me</Nav.Link>
+                        <Nav.Link as={AnchorLink} offset='150' className="link" href="#projects" >Projects</Nav.Link>
+                        <Nav.Link as={AnchorLink} offset='100' className="link" href="#contact" >Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
