@@ -2,7 +2,7 @@ import React from 'react'
 import { Col } from 'react-bootstrap'
 const ThankYou = () => {
     return (
-        <Col sm={5} md={5} lg={5} xl={5}>
+        <Col className="text-center" sm={{ span: 9, offset: 2 }} md={{ span: 6, offset: 0 }} lg={{ span: 5, offset: 0 }} xl={{ span: 5, offset: 0 }}>
             <h3>Got it!</h3>
             <h4> I'll be in touch soon.</h4>
         </Col>
