@@ -3,7 +3,6 @@ import { Row, Col, Form, Button, Alert } from 'react-bootstrap'
 
 const SayHi = ({ handleChange, handleMessage, isFormSending, errorMessage, isError }) => {
 
-    console.log(isFormSending);
 
     const SendButton = () => {
         return (<Button onClick={handleMessage} variant="primary" type="button">Send</Button >)
