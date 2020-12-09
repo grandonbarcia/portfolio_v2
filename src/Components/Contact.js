@@ -7,7 +7,7 @@ import ThankYou from './ThankYou'
 import useForm from '../Hooks/useForm'
 import '../App.css';
 
-const URL = 'http://localhost:5000/portfolio'
+const URL = 'https://pure-tor-22612.herokuapp.com/'
 
 
 
@@ -30,7 +30,7 @@ const Contact = () => {
             }
             let response = await fetch(URL, requestOptions);
             let data = await response.json();
-            if (data.isValidated) {
+            if (data.isValid) {
                 setFormSentSuccess(true);
 
             } else {
@@ -66,7 +66,7 @@ const Contact = () => {
                                 </Col>
                             </Row>
 
-                            <Row className="align-items-end h-100">
+                            <Row className="align-items-end" style={{ height: '270px' }}>
                                 <Col xs={{ span: 6, offset: 0 }} sm={{ span: 5, offset: 1 }} md={{ span: 5, offset: 0 }} lg={{ span: 6, offset: 0 }} xl={{ span: 6, offset: 0 }} >
                                     <Row>
                                         <Col className="sub__title">
