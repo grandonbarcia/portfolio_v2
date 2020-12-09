@@ -7,9 +7,9 @@ import Contact from './Components/Contact';
 
 const App = () => {
   return (
-    <div className='App'>
+    <div>
       <NavBar />
-      <Container fluid={'lg'}>
+      <Container fluid={'xl'}>
         <LandingPage />
         <Projects />
         <Contact />
