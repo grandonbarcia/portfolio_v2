@@ -14,7 +14,6 @@ const useForm = () => {
     let [isFilled, isFormFilled] = useState(true);
 
     const handleChange = e => {
-        console.log(e.target.value);
         const { name, value } = e.target;
         setMessageInput({
             ...messageInput,
