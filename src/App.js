@@ -4,13 +4,15 @@ import NavBar from './Components/NavBar'
 import LandingPage from './Components/LandingPage'
 import Projects from './Components/Projects';
 import Contact from './Components/Contact';
+import AboutMe from './Components/AboutMe';
 
 const App = () => {
   return (
-    <div>
+    <div className="App">
       <NavBar />
       <Container fluid={'xl'}>
         <LandingPage />
+        <AboutMe />
         <Projects />
         <Contact />
       </Container>
