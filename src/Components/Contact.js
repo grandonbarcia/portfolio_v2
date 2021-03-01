@@ -49,16 +49,16 @@ const Contact = () => {
     return (
         <section id='contact'>
             <Row className="justify-content-md-center " >
-                <Col sm={{ span: 10, offset: 1 }} lg={{ span: 10, offset: 0 }} xl={{ span: 10, offset: 0 }} >
+                <Col sm={{ span: 10, offset: 1 }} md={10} lg={{ span: 10, offset: 0 }} xl={{ span: 10, offset: 0 }} >
                     <Row>
-                        <Col xs={{ span: 10, offset: 2 }} sm={{ span: 10, offset: 3 }} md={{ span: 10, offset: 2 }} lg={{ span: 12, offset: 0 }} xl={{ span: 12, offset: 0 }}>
+                        <Col xs={{ span: 10, offset: 2 }} sm={{ span: 10, offset: 3 }} md={{ span: 9, offset: 0 }} lg={{ span: 12, offset: 0 }} xl={{ span: 12, offset: 0 }}>
                             <h2>Let's Collaborate</h2>
                         </Col>
                     </Row>
                     <Row>
                         <Col md={6} lg={7} xl={7}>
                             <Row>
-                                <Col className="sub__title" sm={{ span: 7, offset: 3 }} md={{ span: 12, offset: 0 }} lg={{ span: 12, offset: 0 }} xl={{ span: 12, offset: 0 }}>
+                                <Col sm={{ span: 7, offset: 3 }} md={{ span: 12, offset: 0 }} lg={{ span: 12, offset: 0 }} xl={{ span: 12, offset: 0 }}>
                                     grandonleebarcia@gmail.com
                                 </Col>
                                 <Col className="my-auto" xl={12}>
