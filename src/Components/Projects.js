@@ -11,27 +11,27 @@ const Projects = () => {
     return (
         <section id='projects'>
             <Row className="justify-content-center">
-                <Col xl={12}>
+                <Col lg={10} xl={12}>
                     <Row className='title'>
                         <Col className="text-center">
                             <h2>Personal Projects</h2>
                         </Col>
                     </Row>
                     <Row className='project__row'>
-                        <Col xl={6}>
-                            <Image className="project__image shadow-lg " src={CovidTracker} width={'100%'} height={'100%'} />
+                        <Col className='project__image__col' lg={6} xl={6}>
+                            <Image className="project__image shadow-lg " src={CovidTracker} />
                         </Col >
-                        <Col xl={{ span: 5, offset: 1 }} className="my-auto">
+                        <Col lg={6} xl={{ span: 5, offset: 1 }} className="my-auto">
                             <Row>
                                 <Col>
-                                    <h4>Covid-19 Tracker</h4>
+                                    <h4 className="title__text">Covid-19 Tracker</h4>
                                     <p className="sub__text">I wanted to outline the current corona virus cases to see if it was getting better or not. That's why I built a simple web app that displays the latests statistics of the Covid-19 Pandemic. Take a look at the top countries that have been effected the most. Also, users can view trends of confirmed cases for the past 30 days in the United states. </p>
 
                                     <Row className="justify-content-end">
-                                        <Col xs={2} sm={2} md={2} lg={2} xl={2}>
+                                        <Col xs={2} sm={2} md={1} lg={2} xl={2}>
                                             <a href="https://github.com/grandonbarcia/covid-tracker" target='_blank' rel="noreferrer"><AiOutlineGithub size={32} /></a>
                                         </Col>
-                                        <Col xs={2} sm={2} md={2} lg={2} xl={2} >
+                                        <Col xs={2} sm={2} md={1} lg={2} xl={2} >
                                             <a href="https://grandonbarcia.github.io/covid-tracker/" target='_blank' rel='norefferrer'><HiOutlineDesktopComputer size={32} /> </a>
                                         </Col>
                                     </Row>
@@ -41,43 +41,41 @@ const Projects = () => {
                         </Col>
                     </Row>
                     <Row className='project__row'>
-                        <Col xl={{ span: 5, offset: 0 }} className="my-auto">
-                            <h4>Instagram Clone</h4>
+                        <Col lg={6} xl={{ span: 5, offset: 0 }} className="my-auto">
+                            <h4 className="title__text">Instagram Clone</h4>
                             <p className="sub__text">I decided to challenge myself to build one of the most popular platforms on the internet to see if I can. Here we have a Instagram Clone. Users can sign up and login and it will redirect them to a feed with random post they can comment on. Still need to work on adding stories and allowing users to upload content. </p>
 
 
                             <Row>
-                                <Col xs={2} sm={2} md={2} lg={2} xl={2}>
+                                <Col xs={2} sm={2} md={1} lg={2} xl={2}>
                                     <a href='https://github.com/grandonbarcia/instagram-clone' target='_blank' rel="noreferrer"><AiOutlineGithub size={32} /></a>
                                 </Col>
-                                <Col xs={2} sm={2} md={2} lg={2} xl={2} >
+                                <Col xs={2} sm={2} md={1} lg={2} xl={2} >
                                     <a href='https://pedantic-cray-446016.netlify.app/login' target='_blank' rel='noreferrer'><HiOutlineDesktopComputer size={32} /></a>
                                 </Col>
                             </Row>
 
 
                         </Col>
-                        <Col xl={{ span: 6, offset: 1 }}>
+                        <Col className='project__image__col' lg={6} xl={{ span: 6, offset: 1 }}>
                             <Image className="project__image shadow-lg" src={InstagramClone} width={'100%'} height={'100%'} />
                         </Col>
                     </Row>
                     <Row className='project__row'>
-                        <Col xl={6} >
+                        <Col className='project__image__col' lg={6} xl={6} >
                             <Image className="project__image shadow-lg" src={TypingTest} width={'100%'} height={'100%'} />
                         </Col>
-                        <Col xl={{ span: 5, offset: 1 }} className=" my-auto">
-                            <h4>Typing Test</h4>
+                        <Col lg={6} xl={{ span: 5, offset: 1 }} className=" my-auto">
+                            <h4 className="title__text">Typing Test</h4>
                             <p className="sub__text">After receiving my new keyboard, I coudn't resist the urge to keep typing on it. That's why I made this typing test. After users hit hit the start button, they are prompted with a quote and text field. When they are finished, their WPM (words per minute) will be displayed. I challenge you to beat your best! Working on implementing a graph to display user's past scores.</p>
                             <Row className="justify-content-end">
-                                <Col xs={2} sm={2} md={2} lg={2} xl={2}>
+                                <Col xs={2} sm={2} md={1} lg={2} xl={2}>
                                     <a href='https://github.com/grandonbarcia/typing-test' target='_blank' rel="noreferrer"><AiOutlineGithub size={32} /></a>
                                 </Col>
-                                <Col xs={2} sm={2} md={2} lg={2} xl={2} >
+                                <Col xs={2} sm={2} md={1} lg={2} xl={2} >
                                     <a href='https://vigilant-spence-6f0b27.netlify.app/' target='_blank' rel='noreferrer'><HiOutlineDesktopComputer size={32} /></a>
                                 </Col>
                             </Row>
-
-
                         </Col>
                     </Row>
                 </Col>
