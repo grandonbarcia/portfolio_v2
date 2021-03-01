@@ -1,5 +1,6 @@
 import React from 'react'
 import { Row, Col, Form, Button, Alert } from 'react-bootstrap'
+import '../App.css';
 
 const SayHi = ({ handleChange, handleMessage, isFormSending, errorMessage, isError }) => {
 

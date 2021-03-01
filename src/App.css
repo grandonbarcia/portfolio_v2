@@ -98,6 +98,12 @@ section .sub__text{
   color: none;
 }
 
+.contact__row{
+
+  height: 270px;
+
+}
+
 @media (max-width: 992px) {
   
 section .sub--text{
@@ -141,6 +147,48 @@ section .sub--text{
     min-height: 30px;
     margin: auto;
   }
+ }
+
+ @media (max-width: 576px) { 
+
+  
+   
+  .SayHi {
+
+    margin-top: 50px;
+
+  }
+
+ 
+  .section__title{
+
+    text-align:center;
+
+
+  }
+
+
+  .email{
+
+    text-align: center;
+
+
+  }
+
+  .sub__title{
+    text-align: center;
+  }
+
+  .contact__number{
+    text-align: center;
+  }
+
+  .contact__row{
+
+    height: 100px;
+  
+  }
+
  }
 
 

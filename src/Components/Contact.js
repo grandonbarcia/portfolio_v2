@@ -51,22 +51,22 @@ const Contact = () => {
             <Row className="justify-content-md-center " >
                 <Col sm={{ span: 10, offset: 1 }} md={10} lg={{ span: 10, offset: 0 }} xl={{ span: 10, offset: 0 }} >
                     <Row>
-                        <Col xs={{ span: 10, offset: 2 }} sm={{ span: 10, offset: 3 }} md={{ span: 9, offset: 0 }} lg={{ span: 12, offset: 0 }} xl={{ span: 12, offset: 0 }}>
-                            <h2>Let's Collaborate</h2>
+                        <Col xs={12} sm={{ span: 10, offset: 3 }} md={{ span: 9, offset: 0 }} lg={{ span: 12, offset: 0 }} xl={{ span: 12, offset: 0 }}>
+                            <h2 className='section__title'>Let's Collaborate</h2>
                         </Col>
                     </Row>
                     <Row>
                         <Col md={6} lg={7} xl={7}>
                             <Row>
-                                <Col sm={{ span: 7, offset: 3 }} md={{ span: 12, offset: 0 }} lg={{ span: 12, offset: 0 }} xl={{ span: 12, offset: 0 }}>
-                                    grandonleebarcia@gmail.com
+                                <Col xs={12} sm={{ span: 7, offset: 3 }} md={{ span: 12, offset: 0 }} lg={{ span: 12, offset: 0 }} xl={{ span: 12, offset: 0 }}>
+                                    <div className='email'>grandonleebarcia@gmail.com</div>
                                 </Col>
                                 <Col className="my-auto" xl={12}>
                                     {/* <SpeechBubble size={150} mood="happy" color="#83D1FB" /> */}
                                 </Col>
                             </Row>
 
-                            <Row className="align-items-end" style={{ height: '270px' }}>
+                            <Row className="align-items-end contact__row">
                                 <Col xs={{ span: 6, offset: 0 }} sm={{ span: 5, offset: 1 }} md={{ span: 5, offset: 0 }} lg={{ span: 6, offset: 0 }} xl={{ span: 6, offset: 0 }} >
                                     <Row>
                                         <Col className="sub__title">
@@ -74,13 +74,13 @@ const Contact = () => {
                                         </Col>
                                     </Row>
                                     <Row className="contact__links">
-                                        <Col xs={3} sm={3} md={3} lg={2} xl={2} className="text-center">
+                                        <Col xs={4} sm={3} md={3} lg={2} xl={2} className="text-center">
                                             <a href="https://github.com/grandonbarcia" target="_blank" rel="noreferrer"><AiFillGithub size={32} /></a>
                                         </Col >
-                                        <Col xs={3} sm={3} md={3} lg={2} xl={2} className="text-center">
+                                        <Col xs={4} sm={3} md={3} lg={2} xl={2} className="text-center">
                                             <a href="https://www.linkedin.com/in/brandon-garcia-54708516b/" target="_blank" rel="noreferrer"><AiFillLinkedin size={32} /></a>
                                         </Col>
-                                        <Col xs={3} sm={3} md={3} lg={2} xl={2} className="text-center">
+                                        <Col xs={4} sm={3} md={3} lg={2} xl={2} className="text-center">
                                             <a href="mailto:grandonleebarcia@gmail.com"><AiOutlineMail size={32} /></a>
                                         </Col>
                                     </Row>

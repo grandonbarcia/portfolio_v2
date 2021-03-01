@@ -9,7 +9,7 @@ const LandingPage = () => {
     return (
         <section id="home" >
             <Row className='justify-content-md-center' >
-                <Col md={10} lg={10} xl={12} className='main__title'>
+                <Col xs={12} md={10} lg={10} xl={12} className='main__title'>
                     <Row className="main__text">
                         <Col>
                             Hi, I'm Brandon
@@ -35,7 +35,7 @@ const LandingPage = () => {
                             <Button as={AnchorLink} variant={'outline-primary'} href="#contact">Let's Chat</Button>
                         </Col>
                         <Col xs={3} sm={2} md={3} lg={2} xl={2}>
-                            <a href={Resume} target='_blank' rel='noopener noreferrer' ><Button variant={'outline-danger'}>Resume</Button></a>
+                            <a href={Resume} target='_blank' rel='noopener noreferrer'><Button variant={'outline-danger'}>Resume</Button></a>
                         </Col>
                     </Row>
                 </Col>

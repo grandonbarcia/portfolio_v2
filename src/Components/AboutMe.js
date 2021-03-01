@@ -14,10 +14,10 @@ const AboutMe = () => {
                     </Col>
                 </Row>
                 <Row>
-                    <Col className="sub__text" md={6} lg={{ span: 5, offset: 1 }} xl={6}>
+                    <Col className="sub__text" xs={{ size: 9, offset: 1 }} md={6} lg={{ span: 5, offset: 1 }} xl={6}>
                         Creating web apps has always fascinated me, that's why I decided to turn this interest into a career. Despite acquiring considerable knowledge, I do not take it for granted. I constantly try to develop, which allows me to level up my code and create more dynamic projects.
                     </Col>
-                    <Col className="text-center" xs={4} sm={9} md={6} lg={6} xl={{ span: 4, offset: 1 }}>
+                    <Col className="text-center" xs={12} sm={9} md={6} lg={6} xl={{ span: 4, offset: 1 }}>
                         <Browser size={250} mood="happy" color="#61DDBC" />
                     </Col>
                 </Row>
