@@ -1,6 +1,8 @@
 import React from 'react'
 import { Row, Col, Button } from 'react-bootstrap/'
 import { Browser } from 'react-kawaii'
+import Resume from '../img/Brandon_Garcia_Resume.pdf'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 import '../App.css';
 
 const LandingPage = () => {
@@ -29,11 +31,11 @@ const LandingPage = () => {
                         </Col>
                     </Row>
                     <Row>
-                        <Col xl={2}>
-                            <Button variant={'outline-primary'}>Let's Chat</Button>
+                        <Col xs={4} sm={2} md={3} lg={2} xl={2}>
+                            <Button as={AnchorLink} variant={'outline-primary'} href="#contact">Let's Chat</Button>
                         </Col>
-                        <Col xl={2}>
-                            <Button variant={'outline-danger'}>Resume</Button>
+                        <Col xs={3} sm={2} md={3} lg={2} xl={2}>
+                            <a href={Resume} target='_blank' rel='noopener noreferrer' ><Button variant={'outline-danger'}>Resume</Button></a>
                         </Col>
                     </Row>
                 </Col>
