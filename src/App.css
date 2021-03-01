@@ -66,9 +66,17 @@ section .sub__text{
   font-family: 'Lato', sans-serif;
 }
 
+
+
 .project__row:nth-child(3){
   margin-top: 300px;
   margin-bottom: 300px;
+}
+
+.project__row .title__text{
+
+  margin-bottom: 20px;
+
 }
 
 .project__row .sub__text:nth-child(odd) p {
@@ -77,6 +85,8 @@ section .sub__text{
 
 .project__image{
   border-radius: 15px;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -104,23 +114,31 @@ section .sub--text{
 }
 
 @media (max-width: 768px) { 
+
+  .project__image__col:nth-child(odd){
+    margin-bottom: 100px;
+
+  }
+
+  .project__image__col:nth-child(even){
+    margin-top: 100px;
+
+  }
+
   section .sub--text{
     margin-top: 10px
     
   }
-  .SayHi {
-    margin-top: 100px;
-  }
+  
   .sub__title{
     text-align: center;
   }
   .contact__links{
-    padding-left: 25px;
+
     text-align: center;
   }
   .contact__number{
     min-height: 30px;
-    text-align: center;
     margin: auto;
   }
  }
