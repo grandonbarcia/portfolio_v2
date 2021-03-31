@@ -31,7 +31,7 @@ const LandingPage = () => {
                         </Col>
                     </Row>
                     <Row>
-                        <Col xs={4} sm={2} md={3} lg={2} xl={2}>
+                        <Col xs={5} sm={2} md={3} lg={2} xl={2}>
                             <Button as={AnchorLink} variant={'outline-primary'} href="#contact">Let's Chat</Button>
                         </Col>
                         <Col xs={3} sm={2} md={3} lg={2} xl={2}>
