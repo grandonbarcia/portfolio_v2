@@ -19,9 +19,9 @@ const Contact = () => {
 
     const [errorMessage, setErrorMessage] = useState('');
     const [isError, showError] = useState(false)
+
     const handleMessage = async () => {
         setIsFormSending(true);
-        console.log(messageInput);
         try {
             const requestOptions = {
                 method: 'POST',
@@ -88,7 +88,7 @@ const Contact = () => {
                                 <Col xs={6} sm={6} md={7} lg={6} xl={6}>
                                     <Row>
                                         <Col>
-                                            <h5>San Jose, California</h5>
+                                            <h5 className="location">San Jose, California</h5>
                                         </Col>
                                     </Row>
                                     <Row>

@@ -189,6 +189,10 @@ section .sub--text{
   
   }
 
+  .location{
+    text-align: center;
+  }
+
  }
 
 
