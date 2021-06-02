@@ -1,5 +1,7 @@
 import React from 'react'
 import { Row, Col, Card, Image } from 'react-bootstrap/'
+import HabitTracker from '../img/habit-tracker.JPG'
+import BrainGames from '../img/brain-games.jpg'
 import CovidTracker from '../img/covid19.JPG'
 import InstagramClone from '../img/instagram-clone.JPG'
 import TypingTest from '../img/typing-test.JPG'
@@ -16,6 +18,27 @@ const Projects = () => {
                         <Col className="text-center">
                             <h2>Personal Projects</h2>
                         </Col>
+                    </Row>
+                    <Row className='project__row'>
+                        <Col lg={6} xl={5} className="my-auto">
+                            <Row>
+                                <Col>
+                                    <h4 className="title__text">Brain Games </h4>
+                                    <p className="sub__text">I had the idea to develop types of mini game that can test the users gaming basic skills. Inspired by HumanBenchmark, I built a reaction time game and a target practice game. Users are prompt with the rules and a start condition. After the game is finish, the user recieves their respective averages for each game. </p>
+                                    <Row className="justify-content-end">
+                                        <Col xs={2} sm={2} md={1} lg={2} xl={2}>
+                                            <a href="https://github.com/grandonbarcia/mini-games" target='_blank' rel="noreferrer"><AiOutlineGithub size={32} /></a>
+                                        </Col>
+                                        <Col xs={2} sm={2} md={1} lg={2} xl={2} >
+                                            <a href="https://focused-bassi-d58606.netlify.app/" target='_blank' rel='norefferrer'><HiOutlineDesktopComputer size={32} /> </a>
+                                        </Col>
+                                    </Row>
+                                </Col>
+                            </Row>
+                        </Col>
+                        <Col className='project__image__col' lg={6} xl={{ span: 6, offset: 1 }}>
+                            <Image className="project__image shadow-lg " src={BrainGames} />
+                        </Col >
                     </Row>
                     <Row className='project__row'>
                         <Col className='project__image__col' lg={6} xl={6}>
@@ -40,27 +63,29 @@ const Projects = () => {
                             </Row>
                         </Col>
                     </Row>
+
                     <Row className='project__row'>
-                        <Col lg={6} xl={{ span: 5, offset: 0 }} className="my-auto">
-                            <h4 className="title__text">Instagram Clone</h4>
-                            <p className="sub__text">I decided to challenge myself to build one of the most popular platforms on the internet to see if I can. Here we have a Instagram Clone. Users can sign up and login and it will redirect them to a feed with random post they can comment on. Still need to work on adding stories and allowing users to upload content. </p>
-
-
+                        <Col lg={6} xl={5} className="my-auto">
                             <Row>
-                                <Col xs={2} sm={2} md={1} lg={2} xl={2}>
-                                    <a href='https://github.com/grandonbarcia/instagram-clone' target='_blank' rel="noreferrer"><AiOutlineGithub size={32} /></a>
-                                </Col>
-                                <Col xs={2} sm={2} md={1} lg={2} xl={2} >
-                                    <a href='https://pedantic-cray-446016.netlify.app/login' target='_blank' rel='noreferrer'><HiOutlineDesktopComputer size={32} /></a>
+                                <Col>
+                                    <h4 className="title__text">Habit Tracker</h4>
+                                    <p className="sub__text">I wanted to outline the current corona virus cases to see if it was getting better or not. That's why I built a simple web app that displays the latests statistics of the Covid-19 Pandemic. Take a look at the top countries that have been effected the most. Also, users can view trends of confirmed cases for the past 30 days in the United states. </p>
+                                    <Row className="justify-content-end">
+                                        <Col xs={2} sm={2} md={1} lg={2} xl={2}>
+                                            <a href="https://github.com/grandonbarcia/habbit-tracker" target='_blank' rel="noreferrer"><AiOutlineGithub size={32} /></a>
+                                        </Col>
+                                        <Col xs={2} sm={2} md={1} lg={2} xl={2} >
+                                            <a href="https://epic-bell-c4bb6e.netlify.app/" target='_blank' rel='norefferrer'><HiOutlineDesktopComputer size={32} /> </a>
+                                        </Col>
+                                    </Row>
                                 </Col>
                             </Row>
-
-
                         </Col>
                         <Col className='project__image__col' lg={6} xl={{ span: 6, offset: 1 }}>
-                            <Image className="project__image shadow-lg" src={InstagramClone} width={'100%'} height={'100%'} />
-                        </Col>
+                            <Image className="project__image shadow-lg " src={HabitTracker} />
+                        </Col >
                     </Row>
+
                     <Row className='project__row'>
                         <Col className='project__image__col' lg={6} xl={6} >
                             <Image className="project__image shadow-lg" src={TypingTest} width={'100%'} height={'100%'} />
@@ -80,6 +105,8 @@ const Projects = () => {
                     </Row>
                 </Col>
             </Row>
+
+
         </section>
     )
 }
