@@ -71,7 +71,7 @@ const Projects = () => {
                         </Col>
                         <Col lg={6} xl={{ span: 5, offset: 1 }} className=" my-auto">
                             <h4 className="title__text">Habit Tracker </h4>
-                            <p className="sub__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            <p className="sub__text">I wanted to improve my lifestyle a bit by adding some habits that may be beneficial, like meditating and stretching. After a while, I had a hard time keeping track of how many times I did each of these tasks per week. That's why I created a tracker to help me visualize my habits for the month.</p>
                             <Row className="justify-content-end">
                                 <Col xs={2} sm={2} md={1} lg={2} xl={2}>
                                     <a href='https://github.com/grandonbarcia/habbit-tracker' target='_blank' rel="noreferrer"><AiOutlineGithub size={32} /></a>
