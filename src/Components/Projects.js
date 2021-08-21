@@ -2,11 +2,13 @@ import React from 'react'
 import { Row, Col, Image } from 'react-bootstrap/'
 import HabitTracker from '../img/habit-tracker.JPG'
 import BrainGames from '../img/brain-games.jpg'
-import CovidTracker from '../img/covid19.JPG'
+// import CovidTracker from '../img/covid19.JPG'
 import TypingTest from '../img/typing-test.JPG'
 import { HiOutlineDesktopComputer } from 'react-icons/hi'
 import { AiOutlineGithub } from 'react-icons/ai'
 import '../App.css';
+
+
 
 const Projects = () => {
     return (
@@ -19,7 +21,7 @@ const Projects = () => {
                         </Col>
                     </Row>
 
-                    <Row className='project__row'>
+                    {/* <Row className='project__row'>
                         <Col className='project__image__col' lg={6} xl={6}>
                             <Image className="project__image shadow-lg " src={CovidTracker} />
                         </Col >
@@ -41,7 +43,7 @@ const Projects = () => {
                                 </Col>
                             </Row>
                         </Col>
-                    </Row>
+                    </Row> */}
 
                     <Row className='project__row'>
                         <Col lg={6} xl={5} className="my-auto">
@@ -51,10 +53,10 @@ const Projects = () => {
                                     <p className="sub__text">I had the idea to develop types of mini game that can test the users basic gaming skills. Inspired by HumanBenchmark, I built a reaction time game and a target practice game. Users are prompt with the rules and a start condition. After the game is finish, the user recieves their respective averages for each game. </p>
                                     <Row className="justify-content-end">
                                         <Col xs={2} sm={2} md={1} lg={2} xl={2}>
-                                            <a href="https://github.com/grandonbarcia/mini-games" target='_blank' rel="noreferrer"><AiOutlineGithub size={32} /></a>
+                                            <a href="https://github.com/grandonbarcia/mini-games" target='_blank' rel='noreferrer'><AiOutlineGithub size={32} /></a>
                                         </Col>
                                         <Col xs={2} sm={2} md={1} lg={2} xl={2} >
-                                            <a href="https://focused-bassi-d58606.netlify.app/" target='_blank' rel='norefferrer'><HiOutlineDesktopComputer size={32} /> </a>
+                                            <a href="https://focused-bassi-d58606.netlify.app/" target='_blank' rel='noreferrer'><HiOutlineDesktopComputer size={32} /> </a>
                                         </Col>
                                     </Row>
                                 </Col>
@@ -88,13 +90,13 @@ const Projects = () => {
                             <Row>
                                 <Col>
                                     <h4 className="title__text">Typing Test</h4>
-                                    <p className="sub__text">After receiving my new keyboard, I coudn't resist the urge to keep typing on it. That's why I made this typing test. After users hit hit the start button, they are prompted with a quote and text field. When they are finished, their WPM (words per minute) will be displayed. I challenge you to beat your best! Working on implementing a graph to display user's past scores. </p>
+                                    <p className="sub__text">After receiving my new keyboard, I coudn't resist the urge to keep typing on it. That's why I made this typing test. After users hit the start button, they are prompted with a quote and text field. When they are finished, their WPM (words per minute) will be displayed. I challenge you to beat your best! Working on implementing a graph to display user's past scores. </p>
                                     <Row className="justify-content-end">
                                         <Col xs={2} sm={2} md={1} lg={2} xl={2}>
                                             <a href="https://github.com/grandonbarcia/typing-test" target='_blank' rel="noreferrer"><AiOutlineGithub size={32} /></a>
                                         </Col>
                                         <Col xs={2} sm={2} md={1} lg={2} xl={2} >
-                                            <a href="https://vigilant-spence-6f0b27.netlify.app/" target='_blank' rel='norefferrer'><HiOutlineDesktopComputer size={32} /> </a>
+                                            <a href="https://vigilant-spence-6f0b27.netlify.app/" target='_blank' rel='noreferrer'><HiOutlineDesktopComputer size={32} /> </a>
                                         </Col>
                                     </Row>
                                 </Col>
@@ -108,8 +110,6 @@ const Projects = () => {
 
                 </Col>
             </Row>
-
-
         </section>
     )
 }
