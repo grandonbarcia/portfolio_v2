@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { Row, Col, Button } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap'
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai'
-import { SpeechBubble } from 'react-kawaii'
+
 import SayHi from './SayHi'
 import ThankYou from './ThankYou'
 import useForm from '../Hooks/useForm'
@@ -13,7 +13,7 @@ const URL = 'https://pure-tor-22612.herokuapp.com/'
 
 const Contact = () => {
 
-    const { handleChange, messageInput, isFilled } = useForm();
+    const { handleChange, messageInput } = useForm();
     const [isFormSending, setIsFormSending] = useState(false);
     const [formSentSuccess, setFormSentSuccess] = useState(false);
 
