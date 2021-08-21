@@ -7,7 +7,6 @@ const AboutMe = () => {
     return (
         <>
             <section id='about'>
-
                 <Row className='title justify-content-md-end'>
                     <Col className="text-center" sm={10} md={8} lg={6} xl={{ span: 4, offset: 1 }} >
                         <h1>About Me</h1>
