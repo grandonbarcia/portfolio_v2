@@ -60,7 +60,7 @@ const Projects = () => {
                         HumanBenchmark, I built a reaction time game and a
                         target practice game. Users are prompt with the rules
                         and a start condition. After the game is finish, the
-                        user recieves their respective averages for each game.{" "}
+                        user receives their respective averages for each game.{" "}
                       </p>
                     </Col>
                   </Row>
@@ -143,7 +143,7 @@ const Projects = () => {
                 <Col>
                   <h4 className="title__text text-right">Typing Test</h4>
                   <p className="sub__text text-right">
-                    After receiving my new keyboard, I coudn't resist the urge
+                    After receiving my new keyboard, I couldn't resist the urge
                     to keep typing on it. That's why I made this typing test.
                     After users hit the start button, they are prompted with a
                     quote and text field. When they are finished, their WPM
