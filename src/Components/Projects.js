@@ -114,7 +114,7 @@ const Projects = () => {
                 each of these tasks per week. That's why I created a tracker to
                 help me visualize my habits for the month.
               </p>
-              <Row className="justify-content-end">
+              <Row className="justify-content-start">
                 <Col xs={2} sm={2} md={1} lg={2} xl={2}>
                   <a
                     href="https://github.com/grandonbarcia/habbit-tracker"
